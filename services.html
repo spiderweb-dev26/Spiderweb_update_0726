@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SpiderWeb | Our Services</title>
+  <title>spiderweb.lol | Our Services</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕷️</text></svg>">
   <style>
     :root { --primary: #00ffcc; --bg-dark: #0a0a0a; --card-bg: #151515; --text-main: #ffffff; --text-muted: #888888; }
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
     body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; padding-top: 80px; }
     
     nav { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; position: fixed; width: 100%; top: 0; z-index: 100; background: rgba(10, 10, 10, 0.9); backdrop-filter: blur(10px); }
-    .logo { color: var(--primary); font-weight: bold; font-size: 1.5rem; text-decoration: none; }
+    .logo { color: var(--primary); font-weight: bold; font-size: 1.5rem; text-decoration: none; letter-spacing: -0.5px; }
     .nav-links a { color: #fff; text-decoration: none; margin-left: 20px; transition: color 0.3s; font-size: 0.95rem; }
     .nav-links a:hover { color: var(--primary); }
 
@@ -18,7 +19,7 @@
     .header-section h1 { font-size: 3rem; margin-bottom: 15px; }
     .header-section p { color: var(--text-muted); max-width: 600px; margin: 0 auto; font-size: 1.1rem; }
 
-    .services-container { max-width: 1200px; margin: 0 auto; padding: 40px 5% 100px; }
+    .services-container { max-width: 1200px; margin: 0 auto; padding: 40px 5% 60px; }
     .service-row { display: flex; flex-wrap: wrap; align-items: center; gap: 50px; margin-bottom: 80px; }
     .service-row:nth-child(even) { flex-direction: row-reverse; }
     .service-content { flex: 1; min-width: 300px; }
@@ -30,15 +31,18 @@
     ul.service-list li { margin-bottom: 10px; color: #ccc; }
     ul.service-list li::before { content: '✓'; color: var(--primary); margin-right: 10px; }
 
+    footer { border-top: 1px solid #222; padding: 40px 5%; text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 80px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+    footer a { color: var(--text-muted); text-decoration: none; transition: color 0.3s; }
+    footer a:hover { color: var(--primary); }
+
     .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
     .reveal.visible { opacity: 1; transform: translateY(0); }
   </style>
 </head>
 <body>
 
-  <!-- Navigation with complete headers -->
   <nav>
-    <a href="index.html" class="logo">SpiderWeb</a>
+    <a href="index.html" class="logo">spiderweb.lol</a>
     <div class="nav-links">
       <a href="services.html" style="color: var(--primary);">Services</a>
       <a href="portfolio.html">Portfolio</a>
@@ -54,8 +58,6 @@
   </header>
 
   <div class="services-container">
-    
-    <!-- Custom Web Design -->
     <div class="service-row reveal">
       <div class="service-content">
         <h2>Custom Web Design</h2>
@@ -69,7 +71,6 @@
       <div class="service-visual">✦</div>
     </div>
 
-    <!-- Deployment -->
     <div class="service-row reveal">
       <div class="service-content">
         <h2>Seamless Deployment</h2>
@@ -83,7 +84,6 @@
       <div class="service-visual">🚀</div>
     </div>
 
-    <!-- Corporate Emails -->
     <div class="service-row reveal">
       <div class="service-content">
         <h2>Corporate Email Solutions</h2>
@@ -97,7 +97,6 @@
       <div class="service-visual">✉</div>
     </div>
 
-    <!-- Digital Subscriptions -->
     <div class="service-row reveal">
       <div class="service-content">
         <h2>Other Digital Solutions</h2>
@@ -110,8 +109,12 @@
       </div>
       <div class="service-visual">⚙</div>
     </div>
-
   </div>
+
+  <footer>
+    <div>&copy; 2026 spiderweb.lol. All rights reserved.</div>
+    <div><a href="admin.html">Admin Portal Login</a></div>
+  </footer>
 
   <script>
     const revealElements = document.querySelectorAll('.reveal');
